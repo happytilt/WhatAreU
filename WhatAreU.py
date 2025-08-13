@@ -54,7 +54,6 @@ def Slice(string, section_lengths):
 	return sliced_sections
 
 #Translates sliced_sections using dictionary into full_translation
-
 def Translate(sliced_sections, dictionary):
     translated_sections = [dictionary.get(i) or (print(f'\n* Dict Error: {i} not found\n') or f'({i})?') for i in sliced_sections]
     return ' '.join(translated_sections)
