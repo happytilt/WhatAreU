@@ -12,8 +12,13 @@ Usage: Usage: python WhatAreU.py <scheme-file-path> <string>
 - Example:  2,3,4 means the given string will sectioned out like so: AABBBCCCC
 - Empty lines and lines starting with '#' will be ignored. Utilizing them as comments, even before the first line.
 - Key value pairs should be formatted so: CODE = Translation
-
+- CODE should be capitalized
 
 # Example
 Once you clone the repo, try out this command in that same directory!
 - py WhatAreU.py ./ExampleFile.txt AALOLYIKE
+
+# To Do
+- docker file for spinning this up in any environment
+- a GUI
+- flags for non-case-sensitive strings and scheme file
