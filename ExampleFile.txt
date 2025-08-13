@@ -13,7 +13,7 @@ BRB = Bringing Roasted Bologna
 
 # Unauthorized ingredients (very illegal)
 NOPE = Banana in Tuna Salad
-YIKES = Warm Milk on Cereal
+YIKE = Warm Milk on Cereal
 OMG = Onions in Dessert
 
-# End of Code. Eat responsibly.
+# example: py WhatAreU.py ./ExampleFile.txt AAOLYIKE
