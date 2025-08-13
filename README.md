@@ -7,8 +7,13 @@ Please message me on Discord (@happytilt) if you have suggestions, criticism, or
 Usage: Usage: python WhatAreU.py <scheme-file-path> <string>
 
 
-Naming Scheme Text File Formatting:
+# Naming Scheme Text File Formatting:
 - First line will always section out the code name.
 - Example:  2,3,4 means the given string will sectioned out like so: AABBBCCCC
 - Empty lines and lines starting with '#' will be ignored. Utilizing them as comments, even before the first line.
 - Key value pairs should be formatted so: CODE = Translation
+
+
+# Example
+Once you clone the repo, try out this command in that same directory!
+- py WhatAreU.py ./ExampleFile.txt AALOLYIKE
