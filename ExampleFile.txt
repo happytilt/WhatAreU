@@ -1,0 +1,19 @@
+# Welcome to the Secret Code of the Society of Silly Sandwiches
+2,3,4
+
+# Animal hierarchy of the Sandwich Kingdom
+AA = Bread Overlord
+BBB = Jelly Jester
+CCCC = Pickle Paladin
+
+# Emergency food signals
+ZZ = Need More Mayo
+LOL = Laughing On Lettuce
+BRB = Bringing Roasted Bologna
+
+# Unauthorized ingredients (very illegal)
+NOPE = Banana in Tuna Salad
+YIKES = Warm Milk on Cereal
+OMG = Onions in Dessert
+
+# End of Code. Eat responsibly.
