@@ -6,17 +6,11 @@ print('  WhatAreU.py')
 print('  Script by happytilt')
 print('------------------------')
 
-#Handles command arguements
-if len(sys.argv) != 3:
-    print("Usage: python WhatAreU.py <scheme-file-path> <string>")
-    sys.exit(1)
+file_path = f'C:\\Users\\you\\WhatAreU\\ExampleFile.txt' #Replace this with you scheme file path
 
-#Converts string to all uppercase
-string = sys.argv[2].upper()
-print(f'Before: {string}')
-
-if __name__ == "__main__":
-    file_path = sys.argv[1]
+userstring = input(f'Please enter the string needing translation:\n')
+string = userstring.upper()
+print(f'\nBefore: {string}')
 
 #Defines section_lengths and creates dictionary from file_path
 def LoadTextFile(file_path):
