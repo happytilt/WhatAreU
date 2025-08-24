@@ -5,6 +5,7 @@ It takes a text file used as a naming scheme and turns it into a python dictiona
 Please message me on Discord (@happytilt) if you have suggestions, criticism, or come across any errors!
 
 Usage: Usage: python WhatAreU.py
+
 On line 9 of WhatAreU.py, replace the value of 'file_path' with the filepath to your scheme file!
 
 # Naming Scheme Text File Formatting:
