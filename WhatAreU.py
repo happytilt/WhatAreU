@@ -4,13 +4,10 @@ import re
 print('\n------------------------')
 print('  WhatAreU.py')
 print('  Script by happytilt')
-print('------------------------')
+print('  CTRL + C to exit')
+print('------------------------\n')
 
-file_path = f'C:\\Users\\you\\WhatAreU\\ExampleFile.txt' #Replace this with you scheme file path
-
-userstring = input(f'Please enter the string needing translation:\n')
-string = userstring.upper()
-print(f'\nBefore: {string}')
+file_path = '' #Replace this with your scheme file path
 
 #Defines section_lengths and creates dictionary from file_path
 def LoadTextFile(file_path):
@@ -37,7 +34,6 @@ def Slice(string, section_lengths):
 	except:
 		print('\n* Sectioning error, invalid string or scheme file error')
 		print('------------------------\n')
-		exit(1)
 	'''
 	#index = 0
 	for i in section_lengths:
@@ -52,9 +48,15 @@ def Translate(sliced_sections, dictionary):
     translated_sections = [dictionary.get(i) or (print(f'\n* Dict Error: {i} not found\n') or f'({i})?') for i in sliced_sections]
     return ' '.join(translated_sections)
 
-section_lengths, dictionary = LoadTextFile(file_path)
-sliced_sections = Slice(string, section_lengths)
-full_translation = Translate(sliced_sections, dictionary)
+#Program Loop
+while True:
+	userstring = input(f'Please enter the string needing translation:\n')
+	string = userstring.upper()
+	print(f'\nBefore: {string}')
 
-print(f'After: {full_translation}')
-print('------------------------\n')
+	section_lengths, dictionary = LoadTextFile(file_path)
+	sliced_sections = Slice(string, section_lengths)
+	full_translation = Translate(sliced_sections, dictionary)
+
+	print(f'After: {full_translation}')
+	print('------------------------\n')
