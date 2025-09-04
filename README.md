@@ -8,6 +8,8 @@ Usage: Usage: python WhatAreU.py
 
 On line 9 of WhatAreU.py, replace the value of 'file_path' with the filepath to your scheme file!
 
+Tip: After editing line 9, you can compile the script for easy access: python -O -m py_compile WhatAreU.py
+
 # Naming Scheme Text File Formatting:
 - First line will always section out the code name.
 - Example:  2,3,4 means the given string will sectioned out like so: AABBBCCCC
